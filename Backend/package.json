@@ -2,9 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Incorporatex backend",
-  "main": "index.js",
+  "main": "index.ts",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "dev": "nodemon --exec tsx src/index.ts",
     "test": "test"
   },
   "author": "Paras Limbu",
@@ -16,6 +17,11 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.2",
+    "nodemon": "^3.1.14",
+    "tsx": "^4.21.0"
   }
 }
