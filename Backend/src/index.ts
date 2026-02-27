@@ -9,7 +9,8 @@ const PORT = process.env.PORT || 8000;
 // Test database connection
 async function startServer() {
     try {
-        await prisma.$connect();
+        // Actually test the connection with a query
+        await prisma.$queryRaw`SELECT 1`;
         console.log('Database connected successfully');
         
         app.listen(PORT, () => {
