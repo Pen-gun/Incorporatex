@@ -1,48 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Instagram, PinIcon, Twitter } from 'lucide-react';
 import { footerSections, footerSocials } from '../lib/navigations.ts';
-import { useState } from 'react';
 
-const FooterBar = () => {
-  const [event, setEvent] = useState('');
-  
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert(`Subscribed with email: ${event}`);
-    setEvent('');
-  };
-  
+const FooterBar = () => {  
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-black dark:from-stone-950 dark:to-black text-white mt-auto">
-      {/* Newsletter Section */}
-      <div className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-          <div className="max-w-2xl mx-auto text-center space-y-6">
-            <span className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest">Stay Connected</span>
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold">Stay Updated on Incorporatex</h3>
-            <p className="text-stone-400 text-base sm:text-lg leading-relaxed">
-              Subscribe for updates on new features, compliance tips, and exclusive early access to our platform.
-            </p>
-            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={handleSubscribe}>
-              <input
-                onChange={(e) => setEvent(e.target.value)}
-                value={event}
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 sm:px-5 py-3 bg-white/5 border border-white/20 rounded-lg sm:rounded-xl text-white placeholder:text-stone-500 focus:outline-none focus:border-blue-400 focus:bg-white/10 transition-all duration-300"
-                required
-              />
-              <button
-                type="submit"
-                className="px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-lg sm:rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
+    <footer className="bg-linear-to-b from-gray-900 to-black dark:from-stone-950 dark:to-black text-white mt-auto">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 mb-8 sm:mb-12">

@@ -18,9 +18,6 @@ const HomePage = () => {
             <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-elevation-2">
               Start Company Registration
             </button>
-            <button className="px-8 py-4 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-stone-800 font-semibold rounded-lg transition-all duration-300">
-              Watch Demo
-            </button>
           </div>
 
           {/* Stats */}
@@ -135,21 +132,6 @@ const HomePage = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-r from-blue-600 to-indigo-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-            Ready to Incorporate Your Business?
-          </h2>
-          <p className="text-lg text-blue-100 max-w-2xl mx-auto">
-            Join thousands of entrepreneurs and startups that have successfully incorporated with Incorporatex.
-          </p>
-          <button className="px-8 py-4 bg-white text-blue-600 hover:bg-gray-100 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-elevation-2">
-            Begin Your Journey
-          </button>
         </div>
       </section>
     </div>
