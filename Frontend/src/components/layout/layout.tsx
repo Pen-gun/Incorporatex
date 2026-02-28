@@ -7,7 +7,6 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
@@ -18,7 +17,6 @@ const Layout = ({ children }: LayoutProps) => {
       <main className="flex-1">
         {children}
       </main>
-
       <Footer />
     </div>
   );
