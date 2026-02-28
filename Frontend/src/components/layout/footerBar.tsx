@@ -19,9 +19,9 @@ const FooterBar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
           <div className="max-w-2xl mx-auto text-center space-y-6">
             <span className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest">Stay Connected</span>
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold">Join the ClassXNeedle World</h3>
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold">Stay Updated on Incorporatex</h3>
             <p className="text-stone-400 text-base sm:text-lg leading-relaxed">
-              Subscribe for exclusive access to new collections, style guides, and member-only offers.
+              Subscribe for updates on new features, compliance tips, and exclusive early access to our platform.
             </p>
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={handleSubscribe}>
               <input
@@ -50,11 +50,11 @@ const FooterBar = () => {
           <div className="col-span-2 sm:col-span-1 space-y-6">
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold">
-                Class<span className="text-blue-400">X</span>Needle
+                Incorporatex
               </h2>
             </div>
             <p className="text-stone-400 text-sm leading-relaxed max-w-xs">
-              Premium clothing crafted with precision and passion. Where timeless elegance meets modern sophistication.
+              Simplifying business incorporation for entrepreneurs worldwide. Fast, secure, and compliant solutions for company registration.
             </p>
             <div className="flex items-center gap-4">
               {footerSocials.map((social) => {

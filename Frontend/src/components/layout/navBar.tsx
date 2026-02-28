@@ -6,8 +6,9 @@ const NavBar = () => {
 
   const navLinks = [
     { label: 'Home', href: '/' },
-    { label: 'Shop', href: '/shop' },
-    { label: 'Orders', href: '/orders' },
+    { label: 'Company Registration', href: '/register-company' },
+    { label: 'Dashboard', href: '/dashboard' },
+    { label: 'About', href: '/about' },
   ];
 
   return (
@@ -16,8 +17,8 @@ const NavBar = () => {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-stone-300 bg-clip-text text-transparent hover:from-slate-800 hover:to-slate-600 transition-all duration-300">
-              ClassXNeedle
+            <a href="/" className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent hover:from-blue-700 hover:to-indigo-700 transition-all duration-300">
+              Incorporatex
             </a>
           </div>
 
