@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import NavBar from './navBar'
+import NavBar from './navBar';
 import Footer from './footerBar';
 
 interface LayoutProps {
@@ -12,10 +12,12 @@ const Layout = ({ children }: LayoutProps) => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col min-h-screen bg-white dark:bg-stone-950">
       <NavBar />
-      <main className="flex-1">
-        {children}
+      <main className="flex-1 w-full">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          {children}
+        </div>
       </main>
       <Footer />
     </div>
