@@ -1,6 +1,7 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
+import { errorHandler } from './middleware/errorHandler';
 
 const app = express()
 
@@ -20,8 +21,11 @@ app.use(express.urlencoded({
 app.use(express.static('public'))
 app.use(cookieParser())
 
-//route import
+// Routes import
+import companyRoutes from './routes/company.routes';
 
-//route declaration
+// API routes
+app.use('/api/companies', companyRoutes);
 
+app.use(errorHandler);
 export default app;
