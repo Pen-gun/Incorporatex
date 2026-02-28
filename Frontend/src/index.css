@@ -50,9 +50,20 @@ input:focus-visible {
 
 /* Smooth transitions for theme changes */
 * {
-  @apply transition-colors duration-300;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 
 button, a {
-  @apply transition-all duration-300;
+  transition: all 0.3s;
+}
+
+/* Navbar underline animation from center */
+.nav-underline {
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+
+.group:hover .nav-underline {
+  transform: scaleX(1);
 }

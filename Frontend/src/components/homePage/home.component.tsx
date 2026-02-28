@@ -2,11 +2,11 @@ const HomePage = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center py-12 sm:py-16 md:py-20 bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-stone-900 dark:via-stone-950 dark:to-blue-950">
+      <section className="min-h-screen flex items-center justify-center py-12 sm:py-16 md:py-20 bg-linear-to-br from-blue-50 via-white to-indigo-50 dark:from-stone-900 dark:via-stone-950 dark:to-blue-950">
         <div className="text-center space-y-8 px-4 sm:px-6 max-w-5xl mx-auto">
           <span className="inline-block text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-4">Business Incorporation Made Simple</span>
           
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 dark:from-blue-400 dark:via-indigo-400 dark:to-blue-400 bg-clip-text text-transparent animate-fade-in">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-linear-to-r from-blue-600 via-indigo-600 to-blue-600 dark:from-blue-400 dark:via-indigo-400 dark:to-blue-400 bg-clip-text text-transparent animate-fade-in">
             Incorporate Your Business in Minutes
           </h1>
           
@@ -15,7 +15,7 @@ const HomePage = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center pt-8 animate-slide-up">
-            <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-elevation-2">
+            <button className="px-8 py-4 bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-elevation-2">
               Start Company Registration
             </button>
           </div>
@@ -59,11 +59,11 @@ const HomePage = () => {
             }].map((step, index) => (
               <div
                 key={index}
-                className="p-8 sm:p-12 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-stone-800 dark:to-stone-700 rounded-xl shadow-elevation-2 hover:shadow-elevation-3 transition-all duration-300"
+                className="p-8 sm:p-12 bg-linear-to-br from-blue-50 to-indigo-50 dark:from-stone-800 dark:to-stone-700 rounded-xl shadow-elevation-2 hover:shadow-elevation-3 transition-all duration-300"
               >
                 <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-lg">
+                  <div className="shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-linear-to-r from-blue-600 to-indigo-600 text-white font-bold text-lg">
                       {step.number}
                     </div>
                   </div>
@@ -121,7 +121,7 @@ const HomePage = () => {
             ].map((feature, index) => (
               <div
                 key={index}
-                className="p-6 sm:p-8 bg-white dark:bg-stone-800 rounded-xl shadow-elevation-1 hover:shadow-elevation-3 transition-all duration-300 transform hover:-translate-y-2"
+                className="p-6 sm:p-8 bg-white dark:bg-stone-800 rounded-xl shadow-elevation-1 hover:shadow-elevation-3 transition-all duration-300 transform hover:scale-105"
               >
                 <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">
                   {feature.title}

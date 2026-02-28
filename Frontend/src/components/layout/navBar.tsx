@@ -16,8 +16,8 @@ const NavBar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <a href="/" className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent hover:from-blue-700 hover:to-indigo-700 transition-all duration-300">
+          <div className="shrink-0">
+            <a href="/" className="text-xl sm:text-2xl font-bold bg-linear-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent hover:from-blue-700 hover:to-indigo-700 transition-all duration-300">
               Incorporatex
             </a>
           </div>
@@ -28,10 +28,10 @@ const NavBar = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-gray-700 dark:text-gray-200 font-medium hover:text-slate-900 dark:hover:text-white transition-colors duration-300 relative group"
+                className="text-gray-700 dark:text-gray-200 font-medium hover:text-slate-900 dark:hover:text-white duration-300 relative group py-1"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 group-hover:w-full transition-all duration-300" />
+                <span className="nav-underline absolute bottom-0 left-0 w-full h-[2px] bg-linear-to-r from-blue-500 to-indigo-600" />
               </a>
             ))}
           </div>
