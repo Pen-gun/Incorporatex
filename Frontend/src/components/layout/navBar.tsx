@@ -27,10 +27,10 @@ const NavBar = () => {
               key={item.label}
               to={item.to}
               className={({ isActive }) =>
-                `rounded-md px-3 py-2 text-sm font-semibold transition-all duration-200 ${
+                `relative rounded-md px-3 py-2 text-sm font-semibold transition-colors duration-200 after:pointer-events-none after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-blue-600 after:content-[''] after:transition-transform after:duration-300 hover:after:scale-x-100 ${
                   isActive
-                    ? 'bg-slate-900 text-white shadow-sm dark:bg-white dark:text-slate-900'
-                    : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-stone-300 dark:hover:bg-stone-800 dark:hover:text-white'
+                    ? 'text-slate-900 after:scale-x-100 dark:text-white'
+                    : 'text-slate-600 hover:text-slate-900 dark:text-stone-300 dark:hover:text-white'
                 }`
               }
             >
