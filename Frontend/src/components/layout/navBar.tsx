@@ -10,12 +10,8 @@ const NavBar = () => {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-stone-950/90">
-      <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-cyan-500 via-blue-600 to-indigo-600" />
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="group flex items-center gap-2" onClick={closeMobileMenu}>
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-cyan-500 to-blue-600 text-sm font-bold text-white shadow-sm">
-            IX
-          </span>
+        <Link to="/" className="group flex items-center" onClick={closeMobileMenu}>
           <span className="text-lg font-bold tracking-tight text-slate-900 transition-colors group-hover:text-blue-700 dark:text-stone-100 dark:group-hover:text-blue-300">
             Incorporatex
           </span>

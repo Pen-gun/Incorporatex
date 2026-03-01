@@ -23,12 +23,6 @@ const HomePage = () => {
             >
               Start Company Registration
             </Link>
-            <Link
-              to="/shareholder"
-              className="px-8 py-4 border border-blue-600 text-blue-700 dark:text-blue-300 dark:border-blue-400 font-semibold rounded-lg transition-all duration-300 hover:bg-blue-50 dark:hover:bg-stone-800"
-            >
-              Register Shareholder
-            </Link>
           </div>
 
           {/* Stats */}
