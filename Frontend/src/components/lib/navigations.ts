@@ -22,6 +22,7 @@ export const mainNav: MainNavItem[] = [
   { label: 'Home', to: '/' },
   { label: 'Company Registration', to: '/company' },
   { label: 'Shareholder Registration', to: '/shareholder' },
+  { label: 'Admin', to: '/admin' },
 ];
 
 export const footerSections: FooterSection[] = [
@@ -30,6 +31,7 @@ export const footerSections: FooterSection[] = [
     links: [
       { label: 'Company Registration', to: '/company' },
       { label: 'Shareholder Registration', to: '/shareholder' },
+      { label: 'Admin Dashboard', to: '/admin' },
       { label: 'Home', to: '/' },
     ],
   },
