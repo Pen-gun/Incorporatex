@@ -6,7 +6,7 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white dark:bg-stone-900 shadow-md">
+    <nav className="sticky top-0 z-50 bg-white dark:bg-stone-900 shadow-md relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
@@ -41,8 +41,8 @@ const NavBar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden pb-4 shadow-lg">
-            <div className="space-y-2">
+          <div className="absolute top-full left-0 right-0 md:hidden bg-white dark:bg-stone-900 shadow-lg border-t border-gray-200 dark:border-stone-800">
+            <div className="space-y-2 p-4">
               {mainNav.map((link) => (
                 <a
                   key={link.label}
