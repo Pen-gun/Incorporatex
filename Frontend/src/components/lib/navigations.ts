@@ -20,27 +20,25 @@ export type SocialLink = {
 
 export const mainNav: MainNavItem[] = [
   { label: 'Home', to: '/' },
-  { label: 'Company Registration', to: '/register-company' },
-  { label: 'Dashboard', to: '/dashboard' },
-  { label: 'About', to: '/about' },
+  { label: 'Company Registration', to: '/company' },
+  { label: 'Shareholder Registration', to: '/shareholder' },
 ];
 
 export const footerSections: FooterSection[] = [
   {
-    title: 'Help',
+    title: 'Start',
     links: [
-      { label: 'Contact Us', to: '#' },
-      { label: 'Info', to: '#' },
-      { label: 'Guide', to: '#' },
+      { label: 'Company Registration', to: '/company' },
+      { label: 'Shareholder Registration', to: '/shareholder' },
+      { label: 'Home', to: '/' },
     ],
   },
   {
-    title: 'Company',
+    title: 'Legal',
     links: [
-      { label: 'About Us', to: '/about' },
-      { label: 'Sustainability', to: '#' },
-      { label: 'Careers', to: '#' },
-      { label: 'Press', to: '#' },
+      { label: 'Privacy Policy', to: '#' },
+      { label: 'Terms of Service', to: '#' },
+      { label: 'Cookies', to: '#' },
     ],
   },
 ];

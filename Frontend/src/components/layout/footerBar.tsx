@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Instagram, PinIcon, Twitter } from 'lucide-react';
 import { footerSections, footerSocials } from '../lib/navigations.ts';
 
-const FooterBar = () => {  
+const FooterBar = () => {
   return (
     <footer className="bg-linear-to-b from-gray-900 to-black dark:from-stone-950 dark:to-black text-white mt-auto">
       {/* Main Footer Content */}
@@ -11,9 +11,9 @@ const FooterBar = () => {
           {/* Brand Column */}
           <div className="col-span-2 sm:col-span-1 space-y-6">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold">
+              <Link to="/" className="text-2xl sm:text-3xl font-bold hover:text-blue-400 transition-colors duration-300">
                 Incorporatex
-              </h2>
+              </Link>
             </div>
             <p className="text-stone-400 text-sm leading-relaxed max-w-xs">
               Simplifying business incorporation for entrepreneurs worldwide. Fast, secure, and compliant solutions for company registration.
@@ -72,16 +72,16 @@ const FooterBar = () => {
       <div className="border-t border-white/10 bg-black/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-stone-500">
-            <p>© {new Date().getFullYear()} ClassXNeedle. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Incorporatex. All rights reserved.</p>
             <div className="flex items-center gap-4 sm:gap-6 flex-wrap justify-center sm:justify-end">
               <a href="#" className="hover:text-white transition-colors duration-300">
                 Privacy Policy
               </a>
-              <span className="hidden sm:inline">•</span>
+              <span className="hidden sm:inline">&bull;</span>
               <a href="#" className="hover:text-white transition-colors duration-300">
                 Terms of Service
               </a>
-              <span className="hidden sm:inline">•</span>
+              <span className="hidden sm:inline">&bull;</span>
               <a href="#" className="hover:text-white transition-colors duration-300">
                 Cookies
               </a>

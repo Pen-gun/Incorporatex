@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const HomePage = () => {
   return (
     <div className="w-full">
@@ -15,9 +17,18 @@ const HomePage = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center pt-8 animate-slide-up">
-            <button className="px-8 py-4 bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-elevation-2">
+            <Link
+              to="/company"
+              className="px-8 py-4 bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-elevation-2"
+            >
               Start Company Registration
-            </button>
+            </Link>
+            <Link
+              to="/shareholder"
+              className="px-8 py-4 border border-blue-600 text-blue-700 dark:text-blue-300 dark:border-blue-400 font-semibold rounded-lg transition-all duration-300 hover:bg-blue-50 dark:hover:bg-stone-800"
+            >
+              Register Shareholder
+            </Link>
           </div>
 
           {/* Stats */}
