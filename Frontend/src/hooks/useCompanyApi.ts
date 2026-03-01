@@ -32,6 +32,18 @@ export function useCreateCompany() {
   });
 }
 
+export function useUpdateCompany() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: ({ id, input }: { id: string; input: CreateCompanyInput }) =>
+      companyApi.updateCompany(id, input),
+    onSuccess: (_data, variables) => {
+      queryClient.invalidateQueries({ queryKey: companyKeys.detail(variables.id) });
+      queryClient.invalidateQueries({ queryKey: companyKeys.all });
+    },
+  });
+}
+
 export function useReplaceShareholders() {
   const queryClient = useQueryClient();
   return useMutation({

@@ -16,6 +16,11 @@ export async function getCompanyById(id: string): Promise<Company> {
   return res.data.data;
 }
 
+export async function updateCompany(id: string, input: CreateCompanyInput): Promise<Company> {
+  const res = await api.patch<ApiResponse<Company>>(`/companies/${id}`, input);
+  return res.data.data;
+}
+
 export async function submitCompany(id: string): Promise<Company> {
   const res = await api.patch<ApiResponse<Company>>(`/companies/${id}/submit`);
   return res.data.data;
