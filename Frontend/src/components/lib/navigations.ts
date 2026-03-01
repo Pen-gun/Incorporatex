@@ -1,18 +1,11 @@
-export type NavItem = {
-  to: string;
+export type MainNavItem = {
   label: string;
-  end?: boolean;
+  to: string;
 };
 
-export const mainNav: NavItem[] = [
-  { to: '/', label: 'Home', end: true },
-  { to: '/catalog', label: 'Shop' },
-  { to: '/orders', label: 'Orders' }
-];
-
 export type FooterLink = {
-  to: string;
   label: string;
+  to: string;
 };
 
 export type FooterSection = {
@@ -21,32 +14,39 @@ export type FooterSection = {
 };
 
 export type SocialLink = {
-  href: string;
   label: string;
+  href: string;
 };
+
+export const mainNav: MainNavItem[] = [
+  { label: 'Home', to: '/' },
+  { label: 'Company Registration', to: '/register-company' },
+  { label: 'Dashboard', to: '/dashboard' },
+  { label: 'About', to: '/about' },
+];
 
 export const footerSections: FooterSection[] = [
   {
     title: 'Help',
     links: [
-      { to: '#', label: 'Contact Us' },
-      { to: '#', label: 'Info' },
-      { to: '#', label: 'Guide' }
-    ]
+      { label: 'Contact Us', to: '#' },
+      { label: 'Info', to: '#' },
+      { label: 'Guide', to: '#' },
+    ],
   },
   {
     title: 'Company',
     links: [
-      { to: '#', label: 'About Us' },
-      { to: '#', label: 'Sustainability' },
-      { to: '#', label: 'Careers' },
-      { to: '#', label: 'Press' }
-    ]
-  }
+      { label: 'About Us', to: '/about' },
+      { label: 'Sustainability', to: '#' },
+      { label: 'Careers', to: '#' },
+      { label: 'Press', to: '#' },
+    ],
+  },
 ];
 
 export const footerSocials: SocialLink[] = [
-  { href: '#', label: 'Instagram' },
-  { href: '#', label: 'Twitter' },
-  { href: '#', label: 'Pinterest' }
+  { label: 'Instagram', href: '#' },
+  { label: 'Twitter', href: '#' },
+  { label: 'Pinterest', href: '#' },
 ];

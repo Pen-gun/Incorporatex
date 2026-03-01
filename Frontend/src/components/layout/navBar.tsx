@@ -1,15 +1,9 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { mainNav } from '../lib/navigations.ts';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const navLinks = [
-    { label: 'Home', href: '/' },
-    { label: 'Company Registration', href: '/register-company' },
-    { label: 'Dashboard', href: '/dashboard' },
-    { label: 'About', href: '/about' },
-  ];
 
   return (
     <nav className="sticky top-0 z-50 bg-white dark:bg-stone-900 shadow-md">
@@ -24,14 +18,13 @@ const NavBar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
+            {mainNav.map((link) => (
               <a
                 key={link.label}
-                href={link.href}
-                className="text-gray-700 dark:text-gray-200 font-medium hover:text-slate-900 dark:hover:text-white duration-300 relative group py-1"
+                href={link.to}
+                className="relative py-1 text-gray-700 dark:text-gray-200 font-medium transition-colors duration-300 hover:text-slate-900 dark:hover:text-white after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:-translate-x-1/2 after:bg-linear-to-r after:from-blue-500 after:to-indigo-600 after:transition-all after:duration-300 after:ease-out hover:after:w-full"
               >
                 {link.label}
-                <span className="nav-underline absolute bottom-0 left-0 w-full h-[2px] bg-linear-to-r from-blue-500 to-indigo-600" />
               </a>
             ))}
           </div>
@@ -50,10 +43,10 @@ const NavBar = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-4 shadow-lg">
             <div className="space-y-2">
-              {navLinks.map((link) => (
+              {mainNav.map((link) => (
                 <a
                   key={link.label}
-                  href={link.href}
+                  href={link.to}
                   className="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-stone-800 rounded-lg transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >

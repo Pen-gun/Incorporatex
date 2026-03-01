@@ -56,14 +56,3 @@ input:focus-visible {
 button, a {
   transition: all 0.3s;
 }
-
-/* Navbar underline animation from center */
-.nav-underline {
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease-out;
-}
-
-.group:hover .nav-underline {
-  transform: scaleX(1);
-}
