@@ -91,7 +91,7 @@ const ShareholderRegistration = () => {
                 value={sh.firstName}
                 onChange={(e) => updateShareholder(index, 'firstName', e.target.value)}
                 className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-gray-900 outline-none focus:ring-2 focus:ring-blue-500 dark:border-stone-700 dark:bg-stone-900 dark:text-white"
-                placeholder="John"
+                placeholder="First name"
               />
             </label>
             <label className="space-y-2">
@@ -104,7 +104,7 @@ const ShareholderRegistration = () => {
                 value={sh.lastName}
                 onChange={(e) => updateShareholder(index, 'lastName', e.target.value)}
                 className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-gray-900 outline-none focus:ring-2 focus:ring-blue-500 dark:border-stone-700 dark:bg-stone-900 dark:text-white"
-                placeholder="Doe"
+                placeholder="Last name"
               />
             </label>
             <label className="space-y-2">
@@ -117,7 +117,7 @@ const ShareholderRegistration = () => {
                 value={sh.nationality}
                 onChange={(e) => updateShareholder(index, 'nationality', e.target.value)}
                 className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-gray-900 outline-none focus:ring-2 focus:ring-blue-500 dark:border-stone-700 dark:bg-stone-900 dark:text-white"
-                placeholder="Nepali"
+                placeholder="Nationality"
               />
             </label>
           </div>

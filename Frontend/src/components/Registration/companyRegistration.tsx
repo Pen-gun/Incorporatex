@@ -60,7 +60,7 @@ const CompanyRegistration = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="w-full rounded-lg border border-gray-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-3 py-2 text-gray-900 dark:text-white outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Incorporatex Pvt Ltd"
+            placeholder="Company name"
           />
         </label>
 
@@ -86,7 +86,7 @@ const CompanyRegistration = () => {
             value={totalCapitalInvested}
             onChange={(e) => setTotalCapitalInvested(e.target.value)}
             className="w-full rounded-lg border border-gray-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-3 py-2 text-gray-900 dark:text-white outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="50000"
+            placeholder="e.g. 50000.00"
           />
         </label>
       </div>
