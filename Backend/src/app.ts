@@ -6,7 +6,7 @@ import { errorHandler } from './middleware/errorHandler';
 const app = express()
 
 app.use(cors({
-    origin: process.env.CLIENT_URL,
+    origin: 'http://localhost:5173',
     credentials: true
 }))
 app.use(express.json(
@@ -25,6 +25,10 @@ app.use(cookieParser())
 import companyRoutes from './routes/company.routes';
 
 // API routes
+app.get('/api/health', (_req, res) => {
+    res.json({ ok: true });
+});
+
 app.use('/api/companies', companyRoutes);
 
 app.use(errorHandler);

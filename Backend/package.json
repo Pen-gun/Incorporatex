@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon --exec tsx -r dotenv/config src/index.ts",
+    "migrate:deploy": "prisma migrate deploy",
+    "dev:docker": "npm run migrate:deploy && npm run dev",
     "test": "test"
   },
   "author": "Paras Limbu",
